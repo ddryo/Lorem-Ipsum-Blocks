@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lorem Ipsum Blocks\n"
+"POT-Creation-Date: 2021-02-25 14:40+0900\n"
+"PO-Revision-Date: 2021-02-25 14:40+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: lorem-ipsum-blocks.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _poedit;__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+"X-Poedit-SearchPathExcluded-3: inc/update\n"
+"X-Poedit-SearchPathExcluded-4: src/**icon.js\n"
+
+#: src/blocks/index.js:17
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua."
+msgstr ""
+
+#: src/blocks/index.js:21
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. uis aute irure dolor in reprehenderit in voluptate velit esse "
+"cillum dolore eu fugiat nulla pariatur."
+msgstr ""
+
+#: src/blocks/index.js:31
+msgid "Lorem Paragraph"
+msgstr ""
+
+#: src/blocks/index.js:42
+msgid "Lorem Paragraph (Long)"
+msgstr ""
+
+#: src/blocks/index.js:57
+msgid "Lorem List"
+msgstr ""
+
+#: src/blocks/index.js:72
+msgid "Lorem Heading"
+msgstr ""
+
+#: src/blocks/index.js:74
+msgid "Lorem Ipsum Heading"
+msgstr ""
+
+#: src/blocks/index.js:87
+msgid "Lorem Image"
+msgstr ""
+
+#: src/blocks/index.js:102
+msgid "Lorem Button"
+msgstr ""
+
+#: src/blocks/index.js:108
+msgid "Lorem Buttons"
+msgstr ""
+
+#: src/blocks/index.js:135
+msgid "Lorem Columns"
+msgstr ""
+
+#: src/blocks/index.js:150
+msgid "Lorem Media & Text"
+msgstr ""
+
+#: src/blocks/index.js:160
+msgid "Lorem ipsum."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: inc/gutenberg.php:55
+msgid "Lorem Ipsum Blocks"
+msgstr "Lorem Ipsum Blocks"
+
+#. Description of the plugin/theme
+msgid "A plugin that makes it easy to use blocks with dummy text."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "LOOS,Inc."
+msgstr "LOOS,Inc."
+
+#. Author URI of the plugin/theme
+msgid "https://loos.co.jp/"
+msgstr ""

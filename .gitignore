@@ -1,0 +1,5 @@
+/vendor
+/dist
+/node_modules
+/.vscode
+/webpack.config.entries.js

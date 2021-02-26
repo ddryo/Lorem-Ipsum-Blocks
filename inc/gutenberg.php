@@ -3,8 +3,6 @@ namespace Lorem_Ipsum_Blocks;
 
 defined( 'ABSPATH' ) || exit;
 
-// add_action( 'init', '\Lorem_Ipsum_Blocks\register_blocks' );
-
 /**
  * ブロックカテゴリー追加
  */

@@ -41,11 +41,12 @@ if ( ! class_exists( 'Lorem_Ipsum_Blocks' ) ) {
 		public function __construct() {
 
 			// 翻訳ファイルを登録
-			if ( 'ja' === determine_locale() ) {
-				load_textdomain( 'lorem-ipsum-blocks', LOREM_BLKS_PATH . 'languages/lorem-ipsum-blocks-ja.mo' );
-			} else {
-				load_plugin_textdomain( 'lorem-ipsum-blocks' );
-			}
+			load_plugin_textdomain( 'lorem-ipsum-blocks' );
+			// if ( 'ja' === determine_locale() ) {
+			// 	load_textdomain( 'lorem-ipsum-blocks', LOREM_BLKS_PATH . 'languages/lorem-ipsum-blocks-ja.mo' );
+			// } else {
+			// 	load_plugin_textdomain( 'lorem-ipsum-blocks' );
+			// }
 
 			// ファイル読み込み
 			require_once LOREM_BLKS_PATH . 'inc/enqueue_scripts.php';

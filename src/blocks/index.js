@@ -33,7 +33,7 @@ registerBlockVariation('core/paragraph', [
 			content: loremText,
 		},
 		category: loremCategory,
-		scope: ['transform'],
+		scope: ['inserter', 'transform'],
 	},
 ]);
 registerBlockVariation('core/paragraph', [
@@ -49,15 +49,14 @@ registerBlockVariation('core/paragraph', [
 ]);
 
 /**
- * 見出し
+ * リスト
  */
 registerBlockVariation('core/list', [
 	{
 		name: 'lorem-list',
 		title: __('Lorem List', 'lorem-ipsum-blocks'),
 		attributes: {
-			values:
-				'<li>Lorem ipsum list.</li><li>Lorem ipsum list.</li><li>Lorem ipsum list.</li>',
+			values: '<li>Lorem ipsum list.</li><li>Lorem ipsum list.</li><li>Lorem ipsum list.</li>',
 		},
 		category: loremCategory,
 	},

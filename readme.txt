@@ -14,6 +14,7 @@ A plugin that makes it easy to use blocks with dummy text.
 
 This plugin adds variations to some core blocks and makes it easy to use blocks with dummy text and dummy images already entered.
 
+It's very lightweight because it just adds a "variation" of the core block.
 
 == Available Blocks ==
 

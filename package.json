@@ -4,11 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "postinstall": "npm run build",
-        "wp-start": "wp-env start && open http://localhost:5555",
-        "wp-stop": "wp-env run cli wp db export sql/local.sql && wp-env stop",
-        "wp-import": "wp-env run cli wp db import sql/local.sql",
-        "build": "npm run build:blocks && npm run build:js && npm run build:css",
+        "__build": "npm run build:blocks && npm run build:js && npm run build:css",
+        "build": "npm run build:blocks",
         "build:css": "run-s scss postcss",
         "build:blocks": "wp-scripts build",
         "watch": "run-p watchs:css watch:js watch:blocks watch:lang",
@@ -24,7 +21,6 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@wordpress/icons": "^2.8.0",
         "@wordpress/scripts": "^12.5.0",
         "autoprefixer": "^9.8.6",
         "classnames": "^2.2.6",

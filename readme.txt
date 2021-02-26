@@ -3,7 +3,7 @@ Contributors: looswebstudio
 Tags: blocks, lorem ipsum, placeholder
 Requires at least: 5.7
 Tested up to: 5.7
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,8 +27,6 @@ It's very lightweight because it just adds a "variation" of the core block.
 - Lorem Media & Text
 
 
-== How to use ==
-
 == Installation ==
 
 This plugin can be installed directly from your site.
@@ -50,9 +48,11 @@ This plugin can be installed directly from your site.
 
 == Changelog ==
 
+= 1.0.2 =
+Fixed readme.tex.
+
 = 1.0.1 =
-- Fixed some code.
-- Fixed readme.tex.
+Fixed some code.
 
 = 1.0.0 =
 Initial release.

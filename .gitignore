@@ -3,3 +3,4 @@
 /node_modules
 /.vscode
 /webpack.config.entries.js
+/__memo.txt

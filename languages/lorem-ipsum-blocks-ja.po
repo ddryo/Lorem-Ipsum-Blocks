@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lorem Ipsum Blocks\n"
-"POT-Creation-Date: 2021-02-25 14:40+0900\n"
-"PO-Revision-Date: 2021-02-25 14:40+0900\n"
+"POT-Creation-Date: 2021-03-04 21:31+0900\n"
+"PO-Revision-Date: 2021-03-04 21:57+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -25,73 +25,121 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: inc/update\n"
 "X-Poedit-SearchPathExcluded-4: src/**icon.js\n"
 
-#: src/blocks/index.js:17
+#: src/blocks/index.js:27
+msgid "Lorem Paragraph (Short)"
+msgstr "Lorem 段落 (Short)"
+
+#: src/blocks/index.js:38
+msgid "Lorem Paragraph"
+msgstr "Lorem 段落"
+
+#: src/blocks/index.js:49
+msgid "Lorem Paragraph (Long)"
+msgstr "Lorem 段落 (Long)"
+
+#: src/blocks/index.js:61
+msgid "Lorem Paragraph (Full)"
+msgstr "Lorem 段落 (Full)"
+
+#: src/blocks/index.js:76
+msgid "Lorem List"
+msgstr "Lorem リスト"
+
+#: src/blocks/index.js:90
+msgid "Lorem Heading"
+msgstr "Lorem 見出し"
+
+#: src/blocks/index.js:105
+msgid "Lorem Image"
+msgstr "Lorem 画像"
+
+#: src/blocks/index.js:119
+msgid "Lorem Button"
+msgstr "Lorem ボタン"
+
+#: src/blocks/index.js:125
+msgid "Lorem Buttons"
+msgstr "Lorem ボタン"
+
+#: src/blocks/index.js:152
+msgid "Lorem Columns"
+msgstr "Lorem カラム"
+
+#: src/blocks/index.js:167
+msgid "Lorem Media & Text"
+msgstr "Lorem メディアと文章"
+
+#: inc/enqueue_scripts.php:21
+msgid "Lorem ipsum dolor sit amet."
+msgstr "ロレム・イプサムの座り雨。"
+
+#: inc/enqueue_scripts.php:25
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
 "tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
+"ロレム・イプサムの座り雨、トマ好き学習エリット、しかし時と活力、そのような躍"
+"動と楽しみ、ブラインド行うにはいくつかの重要な事柄に座ります。"
 
-#: src/blocks/index.js:21
+#: inc/enqueue_scripts.php:29
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
 "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
 "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
-"consequat. uis aute irure dolor in reprehenderit in voluptate velit esse "
-"cillum dolore eu fugiat nulla pariatur."
+"consequat."
 msgstr ""
+"ロレム・イプサムの座り雨、トマ好き学習エリット、しかし時と活力、そのような躍"
+"動と楽しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、"
+"私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分"
+"注を邪魔されたする人が来ます。"
 
-#: src/blocks/index.js:31
-msgid "Lorem Paragraph"
+#: inc/enqueue_scripts.php:33
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+"quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "
+"consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse "
+"cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat "
+"non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 msgstr ""
+"ロレム・イプサムの座り雨、トマ好き学習エリット、しかし時と活力、そのような躍"
+"動と楽しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、"
+"私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分"
+"注を邪魔されたする人が来ます。クピダタットのつるの痛みになりたい宿題に、批判"
+"されてきたら痛み、マグナ逃亡しても結果の喜びを生成しません。先例クピダタット"
+"ブラックは先例していない、つまり、彼らはあなたの悩みに責任がある人の、一般的"
+"な義務を捨て、魂を癒しています。"
 
-#: src/blocks/index.js:42
-msgid "Lorem Paragraph (Long)"
-msgstr ""
+#: inc/enqueue_scripts.php:37
+msgid "Consectetur adipiscing elit."
+msgstr "トマ好き学習エリット。"
 
-#: src/blocks/index.js:57
-msgid "Lorem List"
-msgstr ""
+#: inc/enqueue_scripts.php:37
+msgid "Sed do eiusmod tempor incididunt ut."
+msgstr "しかし時と活力、躍動と楽しみ。"
 
-#: src/blocks/index.js:72
-msgid "Lorem Heading"
-msgstr ""
+#: inc/enqueue_scripts.php:42
+msgid "Lorem ipsum"
+msgstr "ロレム・イプサム"
 
-#: src/blocks/index.js:74
+#: inc/enqueue_scripts.php:48
 msgid "Lorem Ipsum Heading"
-msgstr ""
-
-#: src/blocks/index.js:87
-msgid "Lorem Image"
-msgstr ""
-
-#: src/blocks/index.js:102
-msgid "Lorem Button"
-msgstr ""
-
-#: src/blocks/index.js:108
-msgid "Lorem Buttons"
-msgstr ""
-
-#: src/blocks/index.js:135
-msgid "Lorem Columns"
-msgstr ""
-
-#: src/blocks/index.js:150
-msgid "Lorem Media & Text"
-msgstr ""
-
-#: src/blocks/index.js:160
-msgid "Lorem ipsum."
-msgstr ""
+msgstr "ロレム・イプサムの見出し"
 
 #. Plugin Name of the plugin/theme
-#: inc/gutenberg.php:55
+#: inc/gutenberg.php:14
 msgid "Lorem Ipsum Blocks"
 msgstr "Lorem Ipsum Blocks"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/ddryo/Lorem-Ipusum-Blocks"
+msgstr "https://github.com/ddryo/Lorem-Ipusum-Blocks"
 
 #. Description of the plugin/theme
 msgid "A plugin that makes it easy to use blocks with dummy text."
 msgstr ""
+"ダミーテキストが入力されたブロックを簡単に使用できるようにするプラグインで"
+"す。"
 
 #. Author of the plugin/theme
 msgid "LOOS,Inc."
@@ -99,4 +147,4 @@ msgstr "LOOS,Inc."
 
 #. Author URI of the plugin/theme
 msgid "https://loos.co.jp/"
-msgstr ""
+msgstr "https://loos.co.jp/"

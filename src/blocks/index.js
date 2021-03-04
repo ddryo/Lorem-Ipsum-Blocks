@@ -4,6 +4,7 @@
 import { __ } from '@wordpress/i18n';
 import { registerBlockVariation } from '@wordpress/blocks';
 
+const loremVars = window.loremIpsumVars;
 /**
  * Lorem カテゴリー
  */
@@ -12,15 +13,11 @@ const loremCategory = 'lorem-ipsum-blocks';
 /**
  * ダミーテキスト
  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ *
+ * 参考 : https://yanohirota.com/lolem-ipsum-jp/
+ *
+ * ロレム・イプサムの嘆き、トマ好き学部のエリット、しかし時と活力、そのような労働と悲しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分注を邪魔されたする人が来ます。クピダタットのつるの痛みになりたい宿題に、批判されてきたら痛み、マグナ逃亡しても結果の喜びを生成しません。先例クピダタットブラックは先例していない、つまり、彼らはあなたの悩みに責任がある人の、一般的な義務を捨て、魂を癒しています。
  */
-const loremText = __(
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	'lorem-ipsum-blocks'
-);
-const loremTextLong = __(
-	'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-	'lorem-ipsum-blocks'
-);
 
 /**
  * 段落
@@ -28,9 +25,20 @@ const loremTextLong = __(
 registerBlockVariation('core/paragraph', [
 	{
 		name: 'lorem-paragraph',
+		title: __('Lorem Paragraph (Short)', 'lorem-ipsum-blocks'),
+		attributes: {
+			content: loremVars.loremTextShort,
+		},
+		category: loremCategory,
+		scope: ['transform'],
+	},
+]);
+registerBlockVariation('core/paragraph', [
+	{
+		name: 'lorem-paragraph--short',
 		title: __('Lorem Paragraph', 'lorem-ipsum-blocks'),
 		attributes: {
-			content: loremText,
+			content: loremVars.loremText,
 		},
 		category: loremCategory,
 		scope: ['inserter', 'transform'],
@@ -41,7 +49,19 @@ registerBlockVariation('core/paragraph', [
 		name: 'lorem-paragraph--long',
 		title: __('Lorem Paragraph (Long)', 'lorem-ipsum-blocks'),
 		attributes: {
-			content: loremTextLong,
+			content: loremVars.loremTextLong,
+		},
+		category: loremCategory,
+		scope: ['transform'],
+	},
+]);
+
+registerBlockVariation('core/paragraph', [
+	{
+		name: 'lorem-paragraph--full',
+		title: __('Lorem Paragraph (Full)', 'lorem-ipsum-blocks'),
+		attributes: {
+			content: loremVars.loremTextFull,
 		},
 		category: loremCategory,
 		scope: ['transform'],
@@ -56,7 +76,7 @@ registerBlockVariation('core/list', [
 		name: 'lorem-list',
 		title: __('Lorem List', 'lorem-ipsum-blocks'),
 		attributes: {
-			values: '<li>Lorem ipsum list.</li><li>Lorem ipsum list.</li><li>Lorem ipsum list.</li>',
+			values: loremVars.loremList,
 		},
 		category: loremCategory,
 	},
@@ -70,7 +90,7 @@ registerBlockVariation('core/heading', [
 		name: 'lorem-heading',
 		title: __('Lorem Heading', 'lorem-ipsum-blocks'),
 		attributes: {
-			content: __('Lorem Ipsum Heading', 'lorem-ipsum-blocks'),
+			content: loremVars.loremTextHeading,
 			level: 2,
 		},
 		category: loremCategory,
@@ -85,8 +105,7 @@ registerBlockVariation('core/image', [
 		name: 'lorem-image',
 		title: __('Lorem Image', 'lorem-ipsum-blocks'),
 		attributes: {
-			url: window.loremIpsumVars.imgDirUrl + 'lorem-image.jpg',
-			// 'https://s.w.org/images/core/5.3/MtBlanc1.jpg',
+			url: loremVars.loremImage,
 		},
 		category: loremCategory,
 	},
@@ -119,13 +138,13 @@ registerBlockVariation('core/buttons', [
 const innerLoremParagraph = [
 	'core/paragraph',
 	{
-		content: loremText,
+		content: loremVars.loremText,
 	},
 ];
 const innerLoremImage = [
 	'core/image',
 	{
-		url: window.loremIpsumVars.imgDirUrl + 'lorem-image.jpg',
+		url: loremVars.loremImage,
 	},
 ];
 registerBlockVariation('core/columns', [
@@ -149,14 +168,14 @@ registerBlockVariation('core/media-text', [
 		title: __('Lorem Media & Text', 'lorem-ipsum-blocks'),
 		attributes: {
 			mediaType: 'image',
-			mediaUrl: window.loremIpsumVars.imgDirUrl + 'lorem-media-image.jpg',
+			mediaUrl: loremVars.loremMediaImage,
 		},
 		innerBlocks: [
 			[
 				'core/paragraph',
 				{
 					fontSize: 'large',
-					content: __('Lorem ipsum.', 'lorem-ipsum-blocks'),
+					content: loremVars.loremTitle,
 				},
 			],
 			innerLoremParagraph,

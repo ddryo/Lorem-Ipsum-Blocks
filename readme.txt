@@ -3,7 +3,7 @@ Contributors: looswebstudio
 Tags: blocks, lorem ipsum, placeholder
 Requires at least: 5.7
 Tested up to: 5.7
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,11 @@ This plugin can be installed directly from your site.
 
 
 == Changelog ==
+
+= 1.1.0 =
+- Changed the content of some dummy text.
+- Changed to translate dummy text from PHP.
+- Added hook to overwrite dummy text etc.
 
 = 1.0.2 =
 Fixed readme.tex.

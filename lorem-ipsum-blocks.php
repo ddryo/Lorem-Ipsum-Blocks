@@ -3,7 +3,7 @@
  * Plugin Name: Lorem Ipsum Blocks
  * Plugin URI: https://github.com/ddryo/Lorem-Ipusum-Blocks
  * Description: A plugin that makes it easy to use blocks with dummy text.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: LOOS,Inc.
  * Author URI: https://loos.co.jp/
  * License: GPL2 or later
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 define( 'LOREM_BLKS_URL', plugins_url( '/', __FILE__ ) );
 define( 'LOREM_BLKS_PATH', plugin_dir_path( __FILE__ ) );
-define( 'LOREM_BLKS_VERSION', ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? wp_date( 'mdGis' ) : '1.1.0' );
+define( 'LOREM_BLKS_VERSION', ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ? wp_date( 'mdGis' ) : '1.1.1' );
 
 
 /**
@@ -32,8 +32,8 @@ if ( ! class_exists( 'Lorem_Ipsum_Blocks' ) ) {
 		public function __construct() {
 
 			// 翻訳ファイルを登録
-			load_plugin_textdomain( 'lorem-ipsum-blocks' );
-			// load_textdomain( 'lorem-ipsum-blocks', LOREM_BLKS_PATH . 'languages/lorem-ipsum-blocks-ja.mo' ); // 開発時確認用
+			// load_plugin_textdomain( 'lorem-ipsum-blocks' );
+			load_textdomain( 'lorem-ipsum-blocks', LOREM_BLKS_PATH . 'languages/lorem-ipsum-blocks-ja.mo' ); // 開発時確認用
 
 			// ファイル読み込み
 			require_once LOREM_BLKS_PATH . 'inc/enqueue_scripts.php';

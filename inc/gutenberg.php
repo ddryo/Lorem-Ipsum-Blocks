@@ -1,13 +1,16 @@
 <?php
-namespace Lorem_Ipsum_Blocks;
+namespace LOOS_Inc\Lorem_Ipsum_Blocks;
 
 defined( 'ABSPATH' ) || exit;
 
 /**
  * ブロックカテゴリー追加
  */
-add_filter( 'block_categories', '\Lorem_Ipsum_Blocks\add_block_categories', 5 );
+global $wp_version;
+$hookname = ( version_compare( $wp_version, '5.8-beta' ) >= 0 ) ? 'block_categories_all' : 'block_categories';
+add_filter( $hookname, __NAMESPACE__ . '\add_block_categories' );
 function add_block_categories( $categories ) {
+
 	$my_category = [
 		[
 			'slug'  => 'lorem-ipsum-blocks',
@@ -15,6 +18,15 @@ function add_block_categories( $categories ) {
 			'icon'  => null,
 		],
 	];
-	array_splice( $categories, 3, 0, $my_category );
+
+	// ウィジェットの前にカテゴリーを追加する
+	foreach ( $categories as $index => $data ) {
+		$slug = $data['slug'] ?? '';
+		if ( 'widgets' === $slug ) {
+			array_splice( $categories, $index, 0, $my_category );
+			break;
+		}
+	}
+
 	return $categories;
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Lorem_Ipsum_Blocks;
+namespace LOOS_Inc\Lorem_Ipsum_Blocks;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -7,11 +7,8 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Gutenberg用ファイル
  */
-add_action( 'enqueue_block_editor_assets', '\Lorem_Ipsum_Blocks\hook_enqueue_block_editor_assets', 20 );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\hook_enqueue_block_editor_assets', 20 );
 function hook_enqueue_block_editor_assets( $hook_suffix ) {
-
-	// ブロック用CSS
-	// wp_enqueue_style( 'lorem-ipsum-blocks-style',  LOREM_BLKS_URL . 'dist/css/blocks.css', [], LOREM_BLKS_VERSION );
 
 	// ブロックスクリプト
 	$asset = include LOREM_BLKS_PATH . 'dist/blocks/index.asset.php';

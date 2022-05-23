@@ -3,7 +3,7 @@
  * Plugin Name: Lorem Ipsum Blocks
  * Plugin URI: https://github.com/ddryo/Lorem-Ipusum-Blocks
  * Description: A plugin that makes it easy to use blocks with dummy text.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: LOOS,Inc.
  * Author URI: https://loos.co.jp/
  * License: GPL2 or later

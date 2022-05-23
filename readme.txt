@@ -2,8 +2,8 @@
 Contributors: looswebstudio
 Tags: blocks, lorem ipsum, placeholder
 Requires at least: 5.7
-Tested up to: 5.8
-Stable tag: 1.2.0
+Tested up to: 6.0
+Stable tag: 1.3.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,9 @@ This plugin can be installed directly from your site.
 
 
 == Changelog ==
+
+= 1.3.0 =
+- Support for WordPress 6.0.
 
 = 1.2.0 =
 - Support for WordPress 5.8.
